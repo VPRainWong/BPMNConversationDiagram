@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.bpmnConversationPlugin"
+		name="BPMN Conversation Diagram plugin"
+		description="Sample plugin for generate BPMN Conversation Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.bpmnConversationPlugin.BpmnConversationPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.bpmnConversationPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.bpmnConversationPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.bpmnConversationPlugin.actionset1.BpmnConversationActionControl"
+					actionType="generalAction"
+      		name="BPMN Conversation Diagram plugin"
+		      description="Sample plugin for generate BPMN Conversation Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="BPMN Conversation Diagram"
+					toolbarPath="com.vp.plugin.sample.bpmnConversationPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.bpmnConversationPlugin.BpmnConversationAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
